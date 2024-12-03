@@ -12,7 +12,7 @@ rmdb:
 	docker remove --force $${DOCKER_CONTAINER_NAME}
 
 resetdb:
-	PYTHONPATH=. python src/utils/setup_database.py
+	PYTHONPATH=. python scripts/reset_database.py
 
 showdb:
 	PYTHONPATH=. python src/utils/show_database.py
