@@ -6,5 +6,5 @@ from src.database.database import Base
 class AccountTable(Base):
     __tablename__ = "account"
     account_id = Column(Integer, primary_key=True, autoincrement=True)
-    gmail = Column(String, default="")
+    gmail = Column(String, nullable=False)
     created_at = Column(DateTime, default=datetime.now(timezone.utc))
