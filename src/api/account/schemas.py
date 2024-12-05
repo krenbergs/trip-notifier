@@ -1,10 +1,9 @@
 from datetime import datetime
 from pydantic import BaseModel, Field, ConfigDict
 
-
 class PostAccountRequest(BaseModel):
     gmail: str = Field(json_schema_extra={"example": "example@gmail.com"})
-    created_at: int = Field(json_schema_extra={"example": "1704063600"})
+    created_at: int = Field(default=None, json_schema_extra={"example": "1704063600"})
 
 
 class PostAccountSuccess(BaseModel):
