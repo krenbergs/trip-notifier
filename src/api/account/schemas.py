@@ -7,7 +7,7 @@ class PostAccountRequest(BaseModel):
 
 
 class PostAccountSuccess(BaseModel):
-    account_id: datetime = Field(json_schema_extra={"example": "15"})
+    account_id: int = Field(json_schema_extra={"example": "15"})
 
     model_config = ConfigDict(from_attributes=True)
 
