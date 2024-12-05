@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     postgres_port: str
     docker_container_name: str
 
+    gmail_secret_url: str
+
     model_config = SettingsConfigDict(env_file=".env.development")
 
 
