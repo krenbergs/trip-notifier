@@ -51,3 +51,5 @@ def send_message(service, user_id, message):
         return message
     except Exception as error:
         print(f'An error occurred: {error}')
+
+gmail = authenticate()
